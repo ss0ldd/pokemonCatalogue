@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PokemonCatalogue</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+            crossorigin="anonymous"
+    >
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="./index.css"
+    >
+</head>
+<body>
+<div class="main">
+    <img class="label" src="/assets/Pokémon_logo.png">
+    <div class="search-bar"></div>
+
+    <div class="pokemon-modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 class="modal-title"></h2>
+            <div class="info-box">
+                <img class="modal-image" src="" alt="Pokemon Image">
+                <p class="modal-description"></p>
+                <button class="favourite-button">Add to favourites</button>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="h1">The most popular Pokémon!</h1>
+    <div class="carousel carousel-dark slide">
+        <div class="carousel-inner"></div>
+        <button class="carousel-control-prev" type="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <h2 class="h2">Pokemon gallery</h2>
+    <div class="pokemon-container"></div>
+</div>
+</body>
+<script type="module" src="index.js"></script>
+<script type="module">
+    import pokemonCatalogue from 'index.js';
+    pokemonCatalogue();
+</script>
+</html>
